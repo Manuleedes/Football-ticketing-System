@@ -1,0 +1,179 @@
+.admin-section {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.admin-text {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-header {
+    font-size: 25px;
+    text-align: left;
+    margin: 15px;
+}
+
+.add-court-form,
+.update-court-form {
+    box-shadow: none;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.add-btn,
+.update-btn {
+    background-color: black;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: black;
+    box-shadow: none;
+}
+
+.add-court-content,
+.update-court-content {
+    justify-content: center;
+    margin-top: 48px
+}
+
+
+/* Container to enable horizontal scrolling */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .table {
+        width: 100%;
+        display: block;
+    }
+
+    .table thead,
+    .table tbody,
+    .table th,
+    .table td,
+    .table tr {
+        display: block;
+    }
+
+    .table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table tr {
+        margin: 0 0 1rem 0;
+    }
+
+    .table td {
+        border: none;
+        position: relative;
+        text-align: right;
+        padding-left: 30%;
+        font-size: 13px;
+    }
+
+    .table td:before {
+        position: absolute;
+        top: 15px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        content: attr(data-label);
+    }
+
+    /* For the User table*/
+    .user-table tbody td:nth-of-type(1)::before {
+        content: "User ID";
+    }
+
+    .user-table tbody td:nth-of-type(2)::before {
+        content: "User Name";
+    }
+
+    .user-table tbody td:nth-of-type(3)::before {
+        content: "User Email";
+    }
+
+    .user-table tbody td:nth-of-type(4)::before {
+        content: "User Status";
+    }
+
+
+    /* For the Booking table */
+    .booking-table tbody td:nth-of-type(1)::before {
+        content: "Booking ID";
+    }
+
+    .booking-table tbody td:nth-of-type(2)::before {
+        content: "Transaction ID";
+    }
+
+    .booking-table tbody td:nth-of-type(3)::before {
+        content: "User ID";
+    }
+
+    .booking-table tbody td:nth-of-type(4)::before {
+        content: "Court Name";
+    }
+
+    .booking-table tbody td:nth-of-type(5)::before {
+        content: "Date and Time";
+    }
+
+    .booking-table tbody td:nth-of-type(6)::before {
+        content: "Paid Amount";
+    }
+
+    .booking-table tbody td:nth-of-type(7)::before {
+        content: "Booking Status";
+    }
+
+    /* For the Courts table */
+    .court-table tbody td:nth-of-type(1)::before {
+        content: "User ID";
+    }
+
+    .court-table tbody td:nth-of-type(2)::before {
+        content: "Court ID";
+    }
+
+    .court-table tbody td:nth-of-type(3)::before {
+        content: "Court Name";
+    }
+
+    .court-table tbody td:nth-of-type(4)::before {
+        content: "Court Type";
+    }
+
+    .court-table tbody td:nth-of-type(5)::before {
+        content: "Court Amount";
+    }
+
+    .court-table tbody td:nth-of-type(6)::before {
+        content: "Court Location";
+    }
+
+    .court-table tbody td:nth-of-type(7)::before {
+        content: "Current Booking";
+    }
+
+    .court-table tbody td:nth-of-type(8)::before {
+        content: "Max Players";
+    }
+
+    .court-table tbody td:nth-of-type(9)::before {
+        content: "Court Management";
+    }
+}

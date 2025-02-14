@@ -1,0 +1,29 @@
+.loading-text {
+    text-align: center;
+}
+
+.main-row {
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bs {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: none;
+}
+
+input,
+select {
+    box-shadow: none;
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.col-md-3 {
+    margin-top: 10px;
+}
+
+.col-md-4 {
+    padding-top: 10px;
+}
